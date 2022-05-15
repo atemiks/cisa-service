@@ -1,0 +1,44 @@
+.section-services {
+    padding: 20px 0;
+}
+
+.services-grid .service-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+@media (min-width: 576px) {
+    .services-grid {
+        position: relative;
+        margin: 0 -10px 30px;
+    }
+
+    .services-grid:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 33px;
+        /*todo: check*/
+        background: url('../../../images/shadow-horizontal.png') no-repeat center top ;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-services {
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        margin: 20px -15px 50px;
+    }
+
+    .services-grid .service-item {
+        margin-bottom: 30px;
+    }
+}

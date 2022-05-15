@@ -1,0 +1,429 @@
+.order-card {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	margin-left: -6px;
+	margin-right: -6px;
+	padding: 15px 5px;
+	font-size: 14px;
+}
+
+
+.order-card  .order-aside {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.order-card  .order-content {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+
+.order-card .order-col {
+	padding: 2px 6px;
+}
+
+
+.order-card .order-col.code-col,
+.order-card .order-col.quantity-col,
+.order-card .order-col.total-col {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
+.order-card .order-col.summary-col {
+	-webkit-order: 0;
+	-ms-order: 0;
+	order: 0;
+}
+
+.order-card .order-col.code-col {
+	-webkit-order: 1;
+	-ms-order: 1;
+	order: 1;
+}
+
+.order-card .order-col.quantity-col {
+	-webkit-order: 2;
+	-ms-order: 2;
+	order: 2;
+}
+
+.order-card .order-col.total-col {
+	-webkit-order: 3;
+	-ms-order: 3;
+	order: 3;
+}
+
+.order-card .order-col.remove-col {
+	-webkit-order: 4;
+	-ms-order: 4;
+	order: 4;
+	position: absolute;
+	right: 0;
+	bottom: 7px;
+}
+
+
+.order-card .order-media {
+	position: relative;
+	display: block;
+	width: 75px;
+	padding-bottom: 100%;
+    border: 1px solid #e6e6e7;
+    box-shadow: 0 0 5px #e6e6e7;
+	text-decoration: none;
+}
+
+.order-card .order-media:hover {
+	text-decoration: none;
+}
+
+.order-card .order-media img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	max-width: calc(100% - 10px);
+	max-height: calc(100% - 10px);
+	margin: auto;
+}
+
+
+.order-card .order-title {
+	color: #a21f16;
+	text-decoration: underline;
+}
+
+.order-card .order-title:hover {
+	color: #a21f16;
+	text-decoration: none;
+}
+
+
+.order-card .order-subtitle {
+	margin-right: 5px;
+	font-size: 80%;
+}
+
+
+.order-card .order-code {
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+
+.order-card .order-quantity {
+	width: 73px;
+	height: 42px;
+	margin: 0;
+	background: url('../../../images/order-recounter.png') no-repeat center center ;
+	background-size: contain;
+}
+
+.order-card .order-quantity input {
+    width: 40px;
+    height: 42px;
+    margin: 0 0 0 8px;
+    border: none;
+    background-color: transparent;
+    font-size: 11px;
+    text-align: center;
+}
+.quantity-count-buttons {
+    width: 25px;
+    margin: 0 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -5px;
+    border: 1px solid #850800;
+    border-radius: 0 5px 5px 0;
+}
+
+.order-card .order-quantity .number-button {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    width: 14px;
+    height: 12px;
+}
+
+.order-card .order-quantity .number-button.dec {
+	top: 21px;
+}
+
+/*order-quantity*/
+.order-quantity-count {
+    width: 94px;
+    max-width: 94px;
+	height: 40px;
+    padding: 3px;
+    margin: 0;
+    display: inline-flex;
+    box-shadow: inset 1px 1px 2px #999999;
+    background: #eff0f2;
+    border-radius: 6px;
+}
+.order-quantity-count .form-number {
+    display: flex;
+    box-shadow: inset -1px -1px 3px #999999;
+    background: #eff0f2;
+    background: linear-gradient(to bottom, #fefefe, #fefefe, #eff0f2, #bdc1c2, #cdcfd0);
+    border: 1px solid #8f8f8f;
+    border-radius: 6px;
+}
+
+.order-quantity-count input {
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    max-width: 50px;
+    margin: 2px 0 2px 6px;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px rgba(234, 235, 236, .5);
+    background: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quantity-count-buttons {
+    width: 28px;
+    margin: 2px 2px 2px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    left: -5px;
+    border: 1px solid #850800;
+    border-radius: 0 5px 5px 0;
+}
+.quantity-count-buttons > * {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: inset 1px 1px 0 #ffb99d;
+    background-color: #a21f16;
+    background: linear-gradient(to bottom, #ee2d21, #d6291e, #b12319, #a21f16, #850800);
+    border: 0;
+}
+.quantity-count-buttons > *:before,
+.quantity-count-buttons > *:after {
+    width: 0;
+    height: 0;
+    content: '';
+    margin-left: -2px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    border: 4px solid transparent;
+    z-index: 1;
+}
+.quantity-count-buttons .number-button.inc:before {
+    top: 0;
+    border-bottom: 4px solid #ffffff;
+}
+.quantity-count-buttons .number-button.dec:after {
+    top: auto;
+    bottom: 0;
+    border-top: 4px solid #ffffff;
+}
+
+/*product-basket-skew*/
+.product-basket-skew {
+    width: 134px;
+    height: 45px;
+    max-width: 100%;
+    flex: 0 0 134px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background: url('../../../images/add-to-basket.svg') no-repeat 0 0;
+    background-size: contain;
+}
+.product-basket-skew.basket-actived {
+    background: url('../../../images/add-to-basket-actived.svg') no-repeat 0 0;
+    background-size: contain;
+}
+.product-basket-skew .order-quantity-count {
+    width: 82px;
+    max-width: 100%;
+    flex: 0 0 82px;
+}
+.product-basket-skew .order-quantity-count,
+.product-basket-skew .order-quantity-count .form-number {
+    box-shadow: none;
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+.product-basket-skew .order-quantity-count .form-number {
+    position: relative;
+    top: 2px;
+}
+.product-basket-skew .order-quantity-count input {
+    max-width: 40px;
+}
+.product-basket-skew .product-add-to-basket {
+    max-width: 100%;
+    flex: 0 0 60px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -7px;
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+/*end product-basket-skew*/
+/*end order-quantity*/
+
+.order-card .order-price {
+	font-size: 16px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.order-card .order-price i {
+	display: inline-block;
+	margin-left: -5px;
+	font-weight: 700;
+}
+
+
+.order-card .order-delete {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.order-card .order-delete img {
+	width: 13px;
+}
+
+
+@media (min-width: 768px) {
+    .order-card {
+        -ms-align-items: center;
+        align-items: center;
+        padding: 15px 12px;
+    }
+
+    .order-card  .order-content {
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -moz-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -o-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+
+    .order-card .order-col.code-col,
+    .order-card .order-col.quantity-col,
+    .order-card .order-col.total-col {
+        display: block;
+    }
+
+
+    .order-card .order-col.summary-col {
+        -webkit-order: 2px;
+        -ms-order: 2px;
+        order: 2px;
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
+
+    .order-card .order-col.code-col {
+        -webkit-order: 0;
+        -ms-order: 0;
+        order: 0;
+        flex: 0 0 90px;
+        max-width: 90px;
+    }
+
+    .order-card .order-col.quantity-col,
+    .order-card .order-col.total-col {
+        flex: 0 0 100px;
+        max-width: 100px;
+    }
+
+    .order-card .order-col.remove-col {
+        flex: 0 0 45px;
+        max-width: 45px;
+        position: static;
+    }
+
+    
+    .order-card .order-media {
+        width: 90px;
+    }
+
+    .order-card .order-subtitle {
+        display: none;
+    }
+
+    .order-card .order-quantity {
+        margin: 0 auto;
+    }
+
+    .order-card .order-price {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .order-card .order-col.code-col {
+        flex: 0 0 110px;
+        max-width: 110px;
+    }
+
+    .order-card .order-col.quantity-col,
+    .order-card .order-col.total-col {
+        flex: 0 0 145px;
+        max-width: 145px;
+        text-align: center;
+    }
+
+
+    .order-card .order-media {
+        width: 152px;
+    }
+}

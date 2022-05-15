@@ -1,0 +1,245 @@
+.compare-wrapper {
+	margin: 15px 0 0;
+	border: 1px solid #BDBDBD;
+    border-radius: 10px;
+}
+
+.compare-wrapper .compare-aside {
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+	flex: 0 0 222px;
+	max-width: 222px;
+	width: 222px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #fff;
+}
+
+.compare-wrapper .compare-aside .compare-specifications {
+	border-right: 1px solid #dedede;
+}
+
+
+.compare-wrapper .compare-content {
+	flex: 0 0 100%;
+	max-width: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+.compare-category {
+	margin-bottom: 15px;
+}
+
+.compare-category label {
+	margin: 0;
+	font-weight: 700;
+}
+
+
+
+.compare-headline {
+	height: 47px;
+	margin: 0;
+	padding: 11px 15px;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	white-space: nowrap;
+}
+
+.compare-controls-title {
+	margin: 5px 0;
+	font-weight: 700;
+}
+
+
+.compare-show {
+	margin: 5px 0;
+}
+
+.compare-toggles {
+	display: inline-block;
+}
+
+.compare-toggles .compare-toggle {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+	border-bottom: 1px dotted #d16200;
+	color: #d16200;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.compare-toggles .compare-toggle.active {
+	padding: 3px 2px;
+	border-bottom-color: transparent;
+	background-color: #d16200;
+	color: #fff;
+}
+
+
+.compare-specifications {
+	background-color: #eff4f7;
+}
+
+.compare-specifications:nth-of-type(1) {
+	border-top: 1px solid #dedede;
+}
+
+.compare-specifications .compare-specification-item {
+	padding: 5px 10px;
+}
+
+.compare-specifications .compare-specification-item:only-child {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.compare-specifications .compare-specification-title {
+	font-weight: 700;
+}
+
+
+
+.swiper-compare {
+	position: static;
+}
+
+.swiper-compare .swiper-slide {
+	background-color: transparent;
+}
+
+.swiper-compare .swiper-button-prev,
+.swiper-compare .swiper-button-next {
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	width: 28px;
+	height: 100%;
+	margin: 0;
+}
+
+.swiper-compare .swiper-button-prev {
+	left: -15px;
+}
+
+.swiper-compare .swiper-button-next {
+	right: -15px;
+}
+
+
+.swiper-compare .swiper-button-prev::before,
+.swiper-compare .swiper-button-next::before {
+	position: absolute;
+	top: 50%;
+	width: 32px;
+	height: 32px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-50%);
+	font-family: 'icomoon';
+	font-size: 40px;
+	color: #a21f16;
+}
+
+.swiper-compare .swiper-button-prev::before {
+	content: "\f111";
+}
+
+.swiper-compare .swiper-button-next::before {
+	content: "\f112";
+}
+
+.swiper-compare .swiper-button-disabled {
+	opacity: 0;
+}
+
+
+@media (min-width: 576px) {
+	.compare-specifications .compare-specification-item {
+		padding: 5px 15px;
+	}
+} 
+
+@media (min-width: 768px) {
+	.compare-wrapper {
+		margin: 0;
+	}
+
+	.compare-wrapper .compare-content {
+		flex: 0 0 calc(100% - 222px);
+		max-width: calc(100% - 222px);
+		width: calc(100% - 222px);
+		margin-left: -1px;
+	}
+
+
+	.compare-category label {
+		font-weight: 400;
+	}
+
+
+	.compare-controls-title {
+		margin: 0;
+	}
+
+	.compare-controls {
+		padding: 15px;
+	}
+
+
+	.compare-show {
+		margin: 10px 0;
+	}
+
+	
+	.swiper-compare .compare-card .compare-header,
+	.swiper-compare .compare-card .compare-specifications {
+		border-left: 1px solid #dedede;
+	}
+
+	.swiper-compare .swiper-slide:only-child .compare-header,
+	.swiper-compare .swiper-slide:only-child .compare-specifications {
+		border-right: 1px solid #dedede;
+	}
+	
+	.swiper-compare .swiper-button-prev,
+	.swiper-compare .swiper-button-next {
+		width: 32px;
+	}
+
+	.swiper-compare .swiper-button-prev {
+		left: -30px;
+	}
+
+	.swiper-compare .swiper-button-next {
+		right: -30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.compare-wrapper .compare-aside {
+		flex: 0 0 282px;
+		max-width: 282px;
+		width: 282px;
+	}
+
+	.compare-wrapper .compare-content {
+		flex: 0 0 calc(100% - 282px);
+		max-width: calc(100% - 282px);
+		width: calc(100% - 282px);
+		margin-left: -1px;
+	}
+}

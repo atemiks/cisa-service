@@ -1,0 +1,22 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 3px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+.badge.badge-light {
+    background-color: #dde5eb;
+    color: #2C2C2C;
+}
+
+.badge.badge-danger {
+    background-color: #e22d29;
+    color: #fff;
+}

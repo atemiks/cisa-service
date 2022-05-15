@@ -1,0 +1,26 @@
+.section-product .product-compare-wrapper {
+    max-width: 375px;
+	margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+.section-product .product-compare-wrapper .product-compare {
+    font-size: inherit;
+}
+
+
+@media (min-width: 576px) {
+    .section-product .product-compare-wrapper {
+        max-width: 380px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+	.section-product .product-compare-wrapper {
+	    max-width: none;
+		margin: 10px 0;
+		text-align: center;
+	}
+}

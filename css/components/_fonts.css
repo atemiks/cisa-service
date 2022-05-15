@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon/icomoon.eot');
+  src:  url('../../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-close-flat:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-angle-left:before {
+  content: "\f111";
+}
+.icon-long-arrow-left:before {
+  content: "\f273";
+}
+.icon-bar-chart:before {
+  content: "\f12e";
+}
+.icon-filter:before {
+  content: "\f1f3";
+}
+.icon-angle-up:before {
+  content: "\f113";
+}
+.icon-long-arrow-right:before {
+  content: "\f274";
+}
+.icon-angle-right:before {
+  content: "\f112";
+}
+.icon-close:before {
+  content: "\f191";
+}
+.icon-rouble:before {
+  content: "\f2e2";
+}
+.icon-long-arrow-down:before {
+  content: "\f272";
+}
+.icon-check:before {
+  content: "\f17b";
+}
+.icon-angle-down:before {
+  content: "\f110";
+}
+.icon-long-arrow-up:before {
+  content: "\f275";
+}
+.icon-shopping-cart:before {
+  content: "\f2fa";
+}

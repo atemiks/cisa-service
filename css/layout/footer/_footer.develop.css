@@ -1,0 +1,39 @@
+.footer-develop {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 64px;
+}
+
+.footer-develop .develop-media {
+    flex: 0 0 64px;
+    max-width: 64px;
+}
+
+.footer-develop .develop-content {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .footer-develop {
+        position: static;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-develop {
+        max-width: 290px;
+    }
+
+    .footer-develop .develop-media {
+        flex: 0 0 74px;
+        max-width: 74px;
+    }
+
+    .footer-develop .develop-content {
+        display: block;
+    }
+}

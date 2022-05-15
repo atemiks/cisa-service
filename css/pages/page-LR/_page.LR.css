@@ -1,0 +1,22 @@
+.page-LR {
+    padding-bottom: 0;
+	font-size: 15px;
+}
+
+.page-LR .article {
+    font-size: 14px;
+}
+
+.page-LR .article p {
+	margin: 20px 0;
+}
+
+
+.page-LR .article ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.page-LR .article ul li:before {
+    top: 12px;
+}

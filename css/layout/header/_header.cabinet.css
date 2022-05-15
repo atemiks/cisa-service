@@ -1,0 +1,11 @@
+.header-cabinet {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+	.header-cabinet {
+		width: 260px;
+	}
+}

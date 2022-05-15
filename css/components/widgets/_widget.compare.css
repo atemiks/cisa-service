@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+	/* widget compare */
+	.widget-compare {
+		text-align: center;
+	}
+
+	.widget-compare .widget-toggler .widget-counter {
+		background-image: url('../../../images/icons/icon-compare.svg') !important;
+	}
+
+	.widget-compare .widget-content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.widget-compare .widget-compare-count {
+		margin: 10px 0;
+		font-weight: 700;
+	}
+}

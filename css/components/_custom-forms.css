@@ -1,0 +1,143 @@
+.custom-control {
+	min-height: auto;
+    padding-left: 0;
+}
+
+.custom-control-label {
+    margin: 0 !important;
+    padding: 0 0 0 20px;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+	line-height: 1.3 !important;
+}
+
+.custom-control-label::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    padding: 0 0 0 3px;
+    border: 1px solid #b5b6b7;
+    border-bottom-color: #cacaca;
+    background: linear-gradient(to bottom, rgba(220,220,220,1) 0%,rgba(252,252,252,1) 50%);
+    box-shadow: none !important;
+    font-family: 'icomoon';
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff4438;
+    text-shadow: 0 1px 1px #682e2b;
+    line-height: .8;
+}
+
+/* checkbox */
+.custom-checkbox .custom-control-label::before {
+	border-radius: 3px;
+}
+
+.custom-checkbox .custom-control-label::after {
+	display: none;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    content: '\f17b';
+    border-color: #b5b6b7;
+    border-bottom-color: #cacaca;
+    background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(207,207,207,1) 100%);
+    color: #ff4438;
+}
+
+/* radio */
+.custom-radio .custom-control-label::after {
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background: #d7291e;
+}
+
+
+
+/* file */
+.custom-file {
+    height: auto;
+}
+
+.custom-file-label {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.custom-file-label::after {
+    display: none;
+}
+
+.custom-file-label .custom-file-media {
+    flex: 0 0 103px;
+    width: 103px;
+    margin-right: 10px;
+}
+
+.custom-file-label .custom-file-content {
+    padding: 0 0 0 30px;
+}
+
+.custom-file-label .custom-file-link {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px;
+    border-bottom: 1px dotted;
+    font-size: 14px;
+}
+
+.custom-file-label .custom-file-link:hover {
+    border-bottom-color: transparent;
+}
+
+.custom-file-label .custom-file-link::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 25px;
+    background: url('../../images/icons/clip.svg') no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    transform: translateX(calc(-100% - 5px)) rotate(45deg);
+}
+
+
+.custom-file-input {
+    display: none;
+}
+
+.custom-file-input:focus ~ .custom-file-label {
+    border: none;
+    box-shadow: none;
+}

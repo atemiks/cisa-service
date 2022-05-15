@@ -1,0 +1,20 @@
+.footer-contact {
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-contact a[href^="mailto:"] {
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 576px) {
+    .footer-contact {
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,60 @@
+.service-card {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C7C8C9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #C7C8C9;
+    font-size: 12px;
+    color: #2C2C2C;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.service-card img {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.service-card .service-title {
+    overflow: hidden;
+    margin: 0 0 10px;
+    padding: 5px 0 15px;
+    border-bottom: 1px dotted #3c1512;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3c1512;
+    text-align: center;
+}
+
+
+@media (min-width: 576px) {
+    .service-card {
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    .service-card .service-title {
+        height: 48px;
+        padding: 0;
+    }
+
+    .service-card:hover {
+        border-color: #C7C8C9;
+        box-shadow: 0 0 5px #C7C8C9;
+        color: #2C2C2C;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-card {
+        padding: 15px;
+    }
+    
+    .service-card .service-title {
+        font-size: 20px;
+        height: 53px;
+    }
+}

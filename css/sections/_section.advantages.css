@@ -1,0 +1,18 @@
+.section-advantages {
+}
+
+.section-advantages .section-title {
+	margin: 0 0 20px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+}
+
+
+.advantages-grid {
+	margin-bottom: -30px;
+}
+
+.advantages-grid .advantage-item {
+	margin-bottom: 30px;
+}

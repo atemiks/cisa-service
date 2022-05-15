@@ -1,0 +1,15 @@
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        max-width: 200px;
+        margin-top: 15px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,25 @@
+.production-grid {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.production-grid .item {
+	padding: 15px 10px;
+}
+
+
+@media (min-width: 1200px) {
+	.production-grid {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.production-grid .item {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.production-grid .item:not(:last-child) {
+		border-bottom: 1px solid #c1c1c1;
+	}
+}

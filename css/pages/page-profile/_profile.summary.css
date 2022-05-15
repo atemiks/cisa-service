@@ -1,0 +1,27 @@
+.profile-summary .profile-summary-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+    border-bottom: 1px solid #929ea6;
+}
+
+.profile-summary .profile-summary-title,
+.profile-summary .profile-summary-value {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 10px;
+}
+
+.profile-summary .profile-summary-title {
+	font-weight: 700;
+}
+
+.profile-summary .profile-summary-value {
+	text-align: right;
+}

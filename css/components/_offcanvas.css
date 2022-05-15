@@ -1,0 +1,149 @@
+.offcanvas-toggler {
+    cursor: pointer;
+    outline: none;
+    margin: 15px 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    line-height: 1;
+}
+
+.offcanvas-toggler span {
+    display: block;
+    height: 2px;
+    width: 32px;
+    margin: 9px 0;
+    background-color:#e22d29;
+}
+
+.offcanvas-toggler span:first-child {
+    margin-top: 0;
+}
+
+.offcanvas-toggler span:last-child {
+    margin-bottom: 0;
+}
+
+.offcanvas-close {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    font-size: 24px;
+    color: #fff;
+}
+
+#offcanvas {
+    overflow-y: auto;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    height: 100vh;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, rgba(213,43,39,1) 0%,rgba(147,25,22,1) 100%);
+    transition: left 300ms ease;
+    -webkit-overflow-scrolling: touch;
+}
+
+#offcanvas.open {
+    left: 0;
+}
+
+
+.offcanvas-actions {
+    order: 1;
+    margin: 5px 0;
+}
+
+.offcanvas-action {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.offcanvas-action i {
+    font-size: 160%;
+    vertical-align: baseline;
+}
+
+#offcanvas .cabinet {
+    order: 0;
+    margin: 5px 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#offcanvas .cabinet .cabinet-media {
+    display: none;
+}
+
+#offcanvas .cabinet-actions .item:not(:last-child) {
+    border-color: #fff;
+}
+
+#offcanvas .cabinet-actions .link {
+    padding: 2px 0;
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+#offcanvas .nav {
+    order: 2;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 5px 0;
+    border-top: 1px solid rgba(255,255,255, .3);
+}
+
+
+.item-compare {
+    position: relative;
+}
+
+.item-compare:before {
+    width: 10px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    box-sizing: content-box;
+    background: #e22d29;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+
+@media (min-width: 768px) {
+    #offcanvas {
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 992px) {
+    #offcanvas {
+        max-width: 455px;
+    }
+}

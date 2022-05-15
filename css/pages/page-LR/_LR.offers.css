@@ -1,0 +1,130 @@
+.LR-offers {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: url('../../../images/page-LR/section-offers/offers-bg.png') repeat-x 0 0;
+}
+
+.LR-offers .section-title {
+	margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.LR-offer-card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+}
+
+.LR-offer-card .LR-offer-body {
+	flex: 1 1 auto;
+	padding-bottom: 10px;
+}
+
+.LR-offer-card .LR-offer-footer {
+	padding-top: 15px;
+    border-top: 1px dotted #adaeb0;
+	text-align: center;
+}
+
+
+.LR-offer-card .LR-offer-thumbnail {
+	margin: 0 0 10px;
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 10px #999999;
+}
+
+.LR-offer-card .LR-offer-thumbnail img {
+	width: 100%;
+}
+
+
+.LR-offer-card .LR-offer-specifications {
+	font-size: 13px;
+	line-height: 1.25;
+}
+
+.LR-offer-card .LR-offer-specification-item {
+	margin-left: -5px;
+	margin-right: -5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.LR-offer-card .LR-offer-specification-title,
+.LR-offer-card .LR-offer-specification-value {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.LR-offer-card .LR-offer-specification-title {
+	flex: 1 1 auto;
+}
+
+.LR-offer-card .LR-offer-specification-value {
+	flex: 0 0 auto;
+	font-size: 15px;
+	font-weight: 700;
+	color: #000;
+	line-height: 1;
+}
+
+.LR-offer-card .LR-offer-specification-value i {
+	display: inline-block;
+	margin-left: -5px;
+	font-weight: inherit;
+}
+
+
+.LR-offers-grid {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.LR-offers-grid .LR-offer-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 45px;
+}
+
+
+.LR-offers .LR-offers-hint {
+	border-radius: 10px;
+	padding: 20px;
+	background: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+@media (min-width: 576px) {
+	.LR-offer-card .LR-offer-specification-item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		margin-left: -5px;
+		margin-right: -5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.LR-offer-card .LR-offer-specification-value {
+		text-align: right;
+	}
+}

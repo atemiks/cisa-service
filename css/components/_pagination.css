@@ -1,0 +1,97 @@
+.pagination,
+.content-inner ul.pagination {
+	position: relative;
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0 30px 0;
+	padding: 0 70px;
+    border-bottom: 1px solid #c8c9c9;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(239,243,247,1) 100%);
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    font-size: 12px;
+}
+.pagination > *:before {
+	display: none;
+}
+
+.pagination .page-link {
+	display: inline-block;
+	padding: 12px 12px;
+	color: #a21f16;
+	text-decoration: underline;
+}
+
+.pagination .page-link i {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 120%;
+}
+
+.pagination .page-link:hover {
+	color: #a21f16;
+	text-decoration: none;
+}
+
+.pagination .page-item {
+	margin: 0 2px;
+	padding: 0;
+    font-size: 16px;
+}
+
+.pagination .page-item.active .page-link {
+    border-left: 1px solid #a6a7ab;
+    border-right: 1px solid #a6a7ab;
+    background: linear-gradient(to bottom, rgba(200,201,203,1) 0%,rgba(228,228,228,1) 30%,rgba(228,228,228,1) 70%,rgba(196,197,199,1) 100%);
+    color: #343434;
+    text-decoration: none;
+}
+
+.pagination .page-item.prev,
+.pagination .page-item.next {
+	position: absolute;
+	top: 0;
+}
+
+.pagination .page-item.prev {
+	left: 0;
+}
+
+.pagination .page-item.next {
+	right: 0;
+}
+
+.pagination .page-item.prev .page-link,
+.pagination .page-item.next .page-link {
+	padding-left: 6px;
+	padding-right: 6px;
+	text-decoration: none;
+}
+
+.pagination .page-item.prev .page-link span,
+.pagination .page-item.next .page-link span {
+	text-decoration: underline;
+}
+
+.pagination .page-item.prev .page-link:hover span,
+.pagination .page-item.next .page-link:hover span {
+	text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .pagination .page-item {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+	.pagination .page-link {
+		padding: 12px 6px;
+	}
+}

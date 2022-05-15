@@ -1,0 +1,109 @@
+/* core */
+@import 'components/_fonts.css';
+@import 'components/_base.css';
+@import 'components/_article.css';
+@import 'pages/_pages.css';
+
+
+/* components */
+@import 'components/_logo.css';
+@import 'components/_contact.css';
+@import 'components/_cabinet.css';
+@import 'components/_nav.css';
+@import 'components/_menu.css';
+@import 'components/_forms.css';
+@import 'components/_buttons.css';
+@import 'components/_custom-forms.css';
+@import 'components/_tables.css';
+@import 'components/_search.css';
+@import 'components/_breadcrumb.css';
+@import 'components/_pagination.css';
+@import 'components/_badge.css';
+@import 'components/_filter.css';
+@import 'components/_related.css';
+@import 'components/_specification.css';
+@import 'components/_swiper.css';
+@import 'components/_slider.range.css';
+@import 'components/_select2.css';
+
+
+@import 'components/_modal.css';
+@import 'components/_offcanvas.css';
+
+@import 'components/widgets/_widget.css';
+@import 'components/widgets/_widget.cart.css';
+@import 'components/widgets/_widget.compare.css';
+
+
+/* header */
+@import 'layout/header/_header.css';
+@import 'layout/header/_header.logo.css';
+@import 'layout/header/_header.contact.css';
+@import 'layout/header/_header.cabinet.css';
+@import 'layout/header/_header.nav.css';
+
+/* sections */
+@import 'sections/_section.advantages.css';
+@import 'sections/_section.catalog.css';
+@import 'sections/_section.production.css';
+@import 'sections/_section.services.css';
+@import 'sections/_section.feedback.css';
+
+/* cards */
+@import 'components/cards/_card.advantage.css';
+@import 'components/cards/_card.service.css';
+@import 'components/cards/_card.product.css';
+@import 'components/cards/_card.production.css';
+@import 'components/cards/_card.order.css';
+@import 'components/cards/_card.order-short.css';
+@import 'components/cards/_card.order-explain.css';
+@import 'components/cards/_card.compare.css';
+
+
+/* page product */
+@import 'pages/page-product/_page.product.css';
+@import 'pages/page-product/_product.media.css';
+@import 'pages/page-product/_product.code.css';
+@import 'pages/page-product/_product.compare.css';
+@import 'pages/page-product/_product.order.css';
+@import 'pages/page-product/_product.specifications.css';
+
+
+/* page cart */
+@import 'pages/page-cart/_cart.order.css';
+@import 'pages/page-cart/_cart.total.css';
+
+
+/* page checkout */
+@import 'pages/page-checkout/_page.checkout.css';
+@import 'pages/page-checkout/_checkout.summary.css';
+
+
+/* page compare */
+@import 'pages/page-compare/_page.compare.css';
+
+
+/* page profile */
+@import 'pages/page-profile/_page.profile.css';
+@import 'pages/page-profile/_profile.summary.css';
+@import 'pages/page-profile/_profile.delivery.css';
+@import 'pages/page-profile/_profile.orders.css';
+
+
+/* page lock replacement */
+@import 'pages/page-LR/_page.LR.css';
+@import 'pages/page-LR/_LR.master.css';
+@import 'pages/page-LR/_LR.price.css';
+@import 'pages/page-LR/_LR.offers.css';
+@import 'pages/page-LR/_LR.process.css';
+@import 'pages/page-LR/_LR.instruction.css';
+@import 'pages/page-LR/_LR.reviews.css';
+
+
+/* footer */
+@import 'layout/footer/_footer.css';
+@import 'layout/footer/_footer.contact.css';
+@import 'layout/footer/_footer.copyright.css';
+@import 'layout/footer/_footer.counters.css';
+@import 'layout/footer/_footer.develop.css';
+

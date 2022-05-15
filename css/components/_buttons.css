@@ -1,0 +1,168 @@
+/* buttons */
+button,
+.btn {
+	cursor: pointer;
+	outline: none !important;
+}
+
+.btn {
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 42px;
+	width: 100%;
+	margin: 5px 0;
+	padding: 0 15px;
+	border: none;
+	border-radius: 4px;
+	background: linear-gradient(#D13028, #D13028, #D13028, #C12D26, #9C2620, #9C2620, #9C2620);
+	font: 700 14px Tahoma, Verdana, Segoe, sans-serif;
+	color: #fff;
+	text-shadow: -1px -1px 0px #6f1610;
+	text-decoration: none;
+}
+
+.btn i {
+	display: inline-block;
+	margin-right: 2px;
+	font-size: 160%;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+
+.btn-light {
+	background: linear-gradient(#F2F2F2, #E9E9E9, #E4E4E4, #E5E5E5, #E9E9E9, #F4F4F4, #F6F6F6);
+	box-shadow: 0 0 2px #000000;
+	color: #A21F16;
+	text-shadow: -1px -1px 0 #FFFFFF;
+}
+
+.btn-light:hover {
+	color: #fd1000;
+	text-decoration: none;
+}
+
+
+.btn-skew {
+    position: relative;
+	display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border: 1px solid #850800;
+    border-radius: 5px;
+    background: #a21f16;
+    background: linear-gradient(to bottom, #ee2d21, #d6291e, #b12319, #a21f16, #850800);
+    box-shadow: inset 1px 1px 0 #ffb99d;
+    transform: skewX(-40deg);
+    white-space: nowrap;
+    text-decoration: none;
+    text-shadow: -1px -1px 0px #6f1610;
+    text-align: center;
+}
+
+.btn-skew span {
+    display: inline-flex;
+    transform: skewX(40deg);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.btn-skew-warning {
+	border: 1px solid #852f00;
+	background: #b93f00;
+	background: linear-gradient(to bottom, #f15200, #e34e00, #cf4700, #b93f00);
+}
+
+.btn-skew-sm {
+	padding: 10px 35px;
+}
+
+.btn-skew-sm span {
+	font-size: 13px;
+}
+
+
+.btn-link {
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 14px;
+	color: #d16200;
+}
+
+.btn-link .text-dotted {
+	border-bottom: 1px dotted #d16200;
+}
+
+.btn-link:hover .text-dotted {
+	border-bottom-color: transparent;
+}
+
+
+.btn-block {
+	width: 100%;
+}
+
+.btn-lg {
+	font-size: 16px;
+}
+
+
+.link-warning {
+	color: #d16200;
+}
+
+.link-dotted {
+	text-decoration: none;
+}
+
+.link-dotted span {
+	border-bottom: 1px dotted #d16200;
+}
+
+.link-dotted:hover span {
+	border-bottom-color: transparent;
+}
+
+
+@media (min-width: 576px) {
+	.btn,
+	.btn-skew {
+		width: auto;
+	}
+
+	.btn-skew {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1200px) {
+	.btn {
+        height: 32px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .btn-skew-sm {
+		padding: 7px 35px;
+	}
+
+    .btn-link {
+        font-size: 12px;
+    }
+}

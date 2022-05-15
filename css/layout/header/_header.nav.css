@@ -1,0 +1,39 @@
+.header-navgiation {
+    position: relative;
+    border-top: 1px solid #a1362e;
+    border-bottom: 1px solid #88100d;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(213,43,39,1) 0%,rgba(147,25,22,1) 100%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-navgiation::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -146px;
+    right: -153px;
+    bottom: -107px;
+    height: 280px;
+    background: url('../../../images/header/header-bg-left.png') no-repeat 0 calc(100% - 118px), 
+    url('../../../images/header/header-bg-right.png') no-repeat 100% 100%;
+}
+
+.header-navgiation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255,255,255,.5);
+}
+
+
+.header-navgiation .header-search {
+    margin-right: 12px;
+}
+
+
+.page-home .header-navgiation::before {
+    display: none;
+}

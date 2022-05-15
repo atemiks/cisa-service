@@ -1,0 +1,13 @@
+.section-product .product-typography-container {
+    font-size: 14px;
+    color: #2e2e2e;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 1200px) {
+	.section-product .product-typography-container {
+	    font-size: 13px;
+	    line-height: 1.4;
+	}
+}

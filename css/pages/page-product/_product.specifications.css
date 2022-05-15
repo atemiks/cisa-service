@@ -1,0 +1,10 @@
+.section-product .product-specifications-headline {
+	margin-bottom: 15px;
+	font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+	.section-product .product-specifications  {
+		margin-top: 30px;
+	}
+}

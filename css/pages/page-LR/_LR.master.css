@@ -1,0 +1,189 @@
+.LR-master {
+    position: relative;
+    padding: 15px 0;
+    border: 1px solid #7c160c;
+    border-radius: 8px;
+    background: #991a0b url(../../../images/page-LR/section-master/master-bg.jpg) repeat;
+    box-shadow: inset 1px 1px 0 #cf918a, inset -1px -1px 0 #cf918a;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.LR-master::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(to right, transparent, rgba(215, 41, 20, .7));
+}
+
+.LR-master .LR-master-typography-container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.LR-master .LR-master-title {
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.LR-master .LR-master-title br {
+    display: none;
+}
+
+
+.LR-master .LR-master-contacts {
+    font-size: 30px;
+    color: #f6ff01;
+}
+
+.LR-master .LR-master-contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.LR-master .LR-master-contacts a:hover {
+    color: #f6ff01;
+    text-decoration: underline;
+}
+
+
+.LR-master .LR-master-order {
+    position: relative;
+    padding-top: 20px;
+}
+
+.LR-master .LR-master-order::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 90%;
+    max-width: 830px;
+    border-top: 1px solid #751409;
+    border-bottom: 1px solid #bb4a3e;
+}
+
+.LR-master .LR-master-order br {
+    display: none;
+}
+
+.LR-master .btn {
+    height: auto;
+    padding: 15px 10px;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(#ffffff, #afb2b3);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: none;
+}
+
+
+@media (min-width: 576px) {
+    .LR-master {
+        padding: 20px 0;
+        text-align: left;
+    }
+
+    .LR-master .LR-master-typography-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    .LR-master .LR-master-title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+
+    .LR-master .LR-master-socials,
+    .LR-master .LR-master-contacts {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .LR-master {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+
+    .LR-master .LR-master-figure {
+        margin: 0;
+    }
+
+    .LR-master .LR-master-figure img {
+        display: block;
+        max-width: 300px;
+        margin: -84px 0 -84px -100px;
+    }
+
+
+    .LR-master .LR-master-title {
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .LR-master {
+        padding: 30px 0;
+    }
+
+    .LR-master .LR-master-typography-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .LR-master .LR-master-figure img {
+        max-width: none;
+        margin: -110px 0 -110px -110px;
+    }
+
+    
+    .LR-master .LR-master-title {
+        font-size: 26px;
+    }
+
+    .LR-master .LR-master-title br {
+        display: block;
+    }
+
+
+    .LR-master .LR-master-socials,
+    .LR-master .LR-master-contacts {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .LR-master .LR-master-contacts {
+        font-size: 36px;
+    }
+
+
+    .LR-master .LR-master-order {
+        padding-top: 30px;
+    }
+
+    .LR-master .LR-master-order br {
+        display: block;
+    }
+
+    .LR-master .btn {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+}

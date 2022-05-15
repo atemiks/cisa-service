@@ -1,0 +1,25 @@
+.profile-block {
+    border: 1px solid #C7C8C9;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 5px #C7C8C9;
+}
+
+.profile-block .profile-content {
+	padding: 10px 10px 45px;
+    border-bottom: 1px solid #929ea6;
+    border-radius: 5px 5px 0 0;
+    background-color: #f7f8f9;
+    box-shadow: 0 0 5px 0 #929ea6;
+	font-size: 14px;
+}
+
+.profile-block .profile-footer {
+	padding: 8px;
+}
+
+.profile-block .profile-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}

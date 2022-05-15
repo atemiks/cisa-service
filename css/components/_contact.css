@@ -1,0 +1,74 @@
+.contact {
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.contact a {
+    white-space: nowrap;
+}
+
+.contact a[href^="tel:"] {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #010101;
+    text-decoration: none;
+}
+
+.contact a[href^="mailto:"] {
+    font-size: 12px;
+    color: #a21f16;
+    text-decoration: none;
+}
+
+.contact .contact-media {
+    display: none;
+}
+
+.contact .contact-title {
+    font-size: 11px;
+    font-style: italic;
+    color: #6b1a1a;
+}
+
+
+@media (min-width: 375px) {
+    .contact a[href^="tel:"] {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) {
+    .contact a[href^="tel:"] {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact .contact-media {
+        display: block;
+        flex: 0 0 34px;
+        max-width: 34px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        line-height: 1.2;
+    }
+
+    .contact a[href^="tel:"] {
+        font-size: 22px;
+    }
+
+    .contact a[href^="mailto:"] {
+        font-size: 14px;
+    }
+
+    .contact .contact-media  {
+        flex: 0 0 50px;
+        max-width: 50px;
+    }
+}

@@ -1,0 +1,200 @@
+.product-order-wrapper {
+    width: 100%;
+    max-width: 465px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.product-order-wrapper .product-order-inner {
+    width: 100%;
+    max-width: 240px;
+    padding: 4px 5px;
+    margin: 0 auto;
+    box-shadow: inset 1px 1px 2px #999999;
+    box-sizing: border-box;
+    background: #eff0f2;
+    transform: skewX(-40deg);
+    border-radius: 6px 15px;
+}
+
+
+.product-order-wrapper .product-order {
+    width: 100%;
+    height: auto;
+    max-width: 240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: normal;
+    transform: skewX(40deg);
+    background: none;
+}
+
+.product-order-wrapper .product-order > * {
+    position: relative;
+}
+
+.product-order-wrapper .product-price {
+    min-width: 160px;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 10px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    left: 28px;
+    text-shadow: 1px 1px #831912;
+    white-space: nowrap;
+    color: #ffffff;
+    box-shadow: inset 1px 1px 0 #ffb99d;
+    box-sizing: border-box;
+    background-color: #a21f16;
+    background: linear-gradient(to bottom, #ee2d21, #d6291e, #b12319, #a21f16, #850800);
+    transform: skewX(-40deg);
+    border: 1px solid #850800;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.product-order-wrapper .product-price * {
+    display: inline-flex;
+    font-weight: bold;
+    transform: skewX(40deg);
+}
+
+.product-order-wrapper .product-price .icon-rouble {
+    margin-left: -5px;
+}
+
+
+.product-order-wrapper .product-basket {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 4px;
+    top: 0;
+    right: auto;
+    left: -15px;
+    display: flex;
+    box-shadow: inset -1px -1px 3px #999999;
+    box-sizing: border-box;
+    background-color: #eff0f2;
+    background: linear-gradient(to bottom, #fefefe, #fefefe, #eff0f2, #bdc1c2, #cdcfd0);
+    transform: skewX(-40deg);
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+}
+
+.product-order-wrapper .product-basket > * {
+    transform: skewX(40deg);
+}
+
+
+.product-order-wrapper .order-quantity-count,
+.product-order-wrapper .order-quantity-count .form-number {
+    box-shadow: none;
+    background: none;
+    border: 0;
+}
+
+.product-order-wrapper .order-quantity-count {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 86px;
+    padding: 0;
+    margin: 0 0 0 15px;
+    top: 0;
+    left: auto;
+}
+
+.product-order-wrapper .quantity-count-buttons .number-button.inc:before {
+    top: 2px;
+}
+
+.product-order-wrapper .quantity-count-buttons .number-button.dec:after {
+    bottom: 2px;
+}
+
+
+.product-order-wrapper .product-add-to-basket {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    flex: 0 0 132px;
+    max-width: 132px;
+    min-width: 132px;
+    width: 132px;
+    height: auto;
+    padding: 0 12px;
+    border: 0;
+    background: none;
+    box-sizing: border-box;
+    font: bold 18px/1 Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: 1px 1px white;
+    text-indent: 0;
+    color: #5f6566;
+}
+
+.product-order-wrapper .product-add-to-basket:before, 
+.product-order-wrapper .product-add-to-basket:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    bottom: 3px;
+    border-left: 1px dotted #e7e8e8;
+    z-index: 1;
+}
+
+.product-order-wrapper .product-add-to-basket:after {
+    border-right: 1px dotted #bbbbbb;
+}
+
+.product-order-wrapper .product-add-to-basket img {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+@media (min-width: 576px) {
+	.product-order-wrapper .product-order-inner {
+        max-width: none;
+        margin: 0 17px;
+    }
+
+    .product-order-wrapper .product-order {
+        max-width: none;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    .product-order-wrapper .product-price {
+        max-width: 160px;
+        flex: 0 0 160px;
+        left: 0;
+    }
+
+    .product-order-wrapper .product-basket {
+        margin-top: 0;
+        left: -6px;
+    }
+
+    .product-order-wrapper .order-quantity-count {
+        margin: 0 6px 0 33px;
+    }
+}
